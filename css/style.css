@@ -17,7 +17,7 @@ html{
 }
 
 body{
-	margin:188px 0 0 0;
+	margin:100px 0 0 0;
 	padding:0 0;
 	font-weight:normal;
 	background: #FFFFFF;
@@ -71,8 +71,8 @@ h5{
 	font-size:22px;
 }
 a{
-	font-family: 'Poppins', sans-serif;
-	color:#007bff;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: rgb(25, 25, 25);
 	text-decoration:none;
 	background-color:transparent;
 	-webkit-text-decoration-skip:objects;
@@ -113,7 +113,7 @@ p{
 }
 .hdrIn{
 	width:100%;
-	padding:36px 0;
+	padding:22px 0;
 	position:relative;
     -webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
@@ -122,6 +122,7 @@ p{
     transition:all 0.6s ease;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .closebtn{display: none}
 .togglarBtn{display: none}
@@ -139,7 +140,7 @@ p{
 .hdrIn::after{clear:both}
 
 .logo{
-	width:15%;
+	width:20%;
 	float:left;
 	-webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
@@ -160,8 +161,10 @@ p{
 	padding:0;
 	list-style:none;
 	position: relative;
-	margin-left: 10%;
-	width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .nav li{
 	font-weight:600;
@@ -171,25 +174,39 @@ p{
 	font-size:13px;
 	color:#fff;
 }
-.nav li:last-child{
-	position: absolute;
-	right: 0;
+.nav li:last-child a{
+    padding: 0 34px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, rgba(241,99,125,1) 0%, rgba(115,99,177,1) 100%);
+    background-size: cover;
+    border-radius: 25px;
+}
+.nav li:last-child a:hover{
+    background-color: rgb(241, 99, 125);
+    background-image: linear-gradient(45deg, rgb(115, 99, 177) 10%, rgb(241, 99, 125) 90%);
+    color: #fff;
 }
 .nav > ul > li{display: inline-block;}
 .nav li a{
 	display: inline-block;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 300;
 	font-size: 14px;
-	line-height: 24px;
+    line-height: 40px;
 	text-align: center;
-	letter-spacing: 0px;
-	text-transform: uppercase;
-	margin: 0 15px;
-	color: #2F2E41;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    color: #000000;
+}
+.nav li a:hover{
+    color: #f1637d;
+    background-color: transparent;
 }
 .nav >ul > li a.active{
-    color: #56C8E7;
+    color: #f1637d;
     background-color: transparent;
 }
 .nav >ul > li a.active:after {
@@ -607,6 +624,20 @@ footer h2{
     margin-top: 0;
 }
 
+footer ul > li{
+    position: relative;
+}
+
+footer ul > li::before{
+    content: "\02DC";
+    color: rgb(241, 99, 125);
+    display: block;
+    font-size: 44px;
+    position: absolute;
+    left: -11px;
+
+}
+
 footer ul > li  > a{
     position: relative;
     display: block;
@@ -618,7 +649,7 @@ footer ul > li  > a{
 }
 
 footer ul > li  > a:hover{
-    color: rgb(241, 99, 125);;
+    color: rgb(241, 99, 125);
 }
 
 footer p{
