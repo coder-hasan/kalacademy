@@ -25,3 +25,9 @@ jQuery("a[href^='#']").click(function(e) {
 		scrollTop: position
 	});
 });
+
+$(document).ready(function(){
+	$(".according h4").click(function(){
+	  $(this).siblings().slideToggle();
+	});
+  });
