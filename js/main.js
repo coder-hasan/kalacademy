@@ -31,3 +31,30 @@ $(document).ready(function(){
 	  $(this).siblings().slideToggle();
 	});
   });
+
+  $('#user_slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+    autoplay:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+        }
+    }
+});
+
+$('.owl-nav').click(function(event) {
+  $(this).removeClass('disabled');
+});
