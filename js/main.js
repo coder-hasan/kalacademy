@@ -32,9 +32,9 @@ $(document).ready(function(){
 	});
   });
 
-  $('#user_slider').owlCarousel({
+  $('#bootcamp_slider').owlCarousel({
     loop:true,
-    margin:10,
+    margin:30,
     nav:true,
     dots: false,
     navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
