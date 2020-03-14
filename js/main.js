@@ -26,6 +26,44 @@ jQuery("a[href^='#']").click(function(e) {
 	});
 });
 
+
+/*------------------------------------------------------------------
+                    Courses
+--------------------------------------------------------------------*/
+$(function(){
+  $('.tabs a').click(function(){
+      $(this).addClass('tab_active').siblings().removeClass('tab_active')    
+  })
+});
+
+$("#boot_tab").on("click",function(){
+  $(".bootcamp").fadeIn(0001);
+  $(".page_area.bootcamp").fadeIn(0001);
+  $(".individual_courses").hide();
+  $(".page_area.individual").hide();
+  $(".calendar").hide();
+  $(".page_area.calendarhd").hide();
+});
+$("#individual_tab").on("click",function(){
+  $(".individual_courses").fadeIn(0001);
+  $(".page_area.individual").fadeIn(0001);
+  $(".bootcamp").hide();
+  $(".page_area.bootcamp").hide();
+  $(".calendar").hide();
+  $(".page_area.calendarhd").hide();
+});
+$("#calendar_tab").on("click",function(){
+  $(".calendar").fadeIn(0001);
+  $(".page_area.calendarhd").fadeIn(0001);
+  $(".bootcamp").hide();
+  $(".page_area.bootcamp").hide();
+  $(".individual_courses").hide();
+  $(".page_area.individual").hide();
+});
+
+
+
+
 $(document).ready(function(){
 	$(".according h4").click(function(){
 	  $(this).siblings().slideToggle();
@@ -53,6 +91,52 @@ $(document).ready(function(){
             nav:true,
         }
     }
+});
+
+$('#bootcamp_slider2').owlCarousel({
+  loop:true,
+  margin:30,
+  nav:true,
+  dots: false,
+  navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+  autoplay:false,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:2,
+          nav:true
+      },
+      1000:{
+          items:3,
+          nav:true,
+      }
+  }
+});
+
+$('#bootcamp_slider3').owlCarousel({
+  loop:true,
+  margin:30,
+  nav:true,
+  dots: false,
+  navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+  autoplay:false,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:2,
+          nav:true
+      },
+      1000:{
+          items:3,
+          nav:true,
+      }
+  }
 });
 
 $('.owl-nav').click(function(event) {
