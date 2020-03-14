@@ -39,13 +39,13 @@ $(function(){
 $("#boot_tab").on("click",function(){
   $(".bootcamp").fadeIn(0001);
   $(".page_area.bootcamp").fadeIn(0001);
-  $(".individual_courses").hide();
+  $(".individual_course_tab").hide();
   $(".page_area.individual").hide();
   $(".calendar").hide();
   $(".page_area.calendarhd").hide();
 });
 $("#individual_tab").on("click",function(){
-  $(".individual_courses").fadeIn(0001);
+  $(".individual_course_tab").fadeIn(0001);
   $(".page_area.individual").fadeIn(0001);
   $(".bootcamp").hide();
   $(".page_area.bootcamp").hide();
@@ -57,7 +57,7 @@ $("#calendar_tab").on("click",function(){
   $(".page_area.calendarhd").fadeIn(0001);
   $(".bootcamp").hide();
   $(".page_area.bootcamp").hide();
-  $(".individual_courses").hide();
+  $(".individual_course_tab").hide();
   $(".page_area.individual").hide();
 });
 

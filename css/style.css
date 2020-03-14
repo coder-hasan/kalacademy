@@ -671,7 +671,7 @@ p{
     color: #fff;
 }
 
-.page_area.individual .contact_details{
+.page_area .contact_details{
     background-color: rgba(246, 244, 244, 0.7);
     padding: 20px;
     margin-bottom: 1.17em;
@@ -682,9 +682,9 @@ p{
     font-size: 30px;
 }
 
-.page_area .page_area_content , .course_details_bnr .page_area_content{
+/* .page_area .page_area_content , .course_details_bnr .page_area_content{
     width: 64%;
-}
+} */
 
 .page_area .btn_area, .course_details_bnr .btn_area{
     margin-top: 20px;
@@ -920,14 +920,14 @@ button.owl-prev {
     align-items: center;
 }
 
-.individual .contact_details p{color: #000}
+.page_area .contact_details p{color: #000}
 
 .individual_course_heading{
     padding: 60px 0;
 }
 
-.individual_courses{
-    display: none;
+.individual_course_tab{
+    /* display: none; */
 }
 
 .individual_courses .heading_indi h2{
