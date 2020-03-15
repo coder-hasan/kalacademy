@@ -70,7 +70,7 @@ $(document).ready(function(){
 	});
   });
 
-  $('#bootcamp_slider').owlCarousel({
+  $('.bootcamp_slider').owlCarousel({
     loop:true,
     margin:30,
     nav:true,
@@ -93,7 +93,7 @@ $(document).ready(function(){
     }
 });
 
-$('#bootcamp_slider2').owlCarousel({
+$('#module_slider').owlCarousel({
   loop:true,
   margin:30,
   nav:true,
@@ -116,12 +116,12 @@ $('#bootcamp_slider2').owlCarousel({
   }
 });
 
-$('#bootcamp_slider3').owlCarousel({
+$('#testimonial_slider').owlCarousel({
   loop:true,
   margin:30,
   nav:true,
   dots: false,
-  navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+  navText: ["<i class='fas fa-caret-left'></i>","<i class='fas fa-caret-right'></i>"],
   autoplay:false,
   responsive:{
       0:{
@@ -129,11 +129,11 @@ $('#bootcamp_slider3').owlCarousel({
           nav:true
       },
       600:{
-          items:2,
+          items:1,
           nav:true
       },
       1000:{
-          items:3,
+          items:1,
           nav:true,
       }
   }

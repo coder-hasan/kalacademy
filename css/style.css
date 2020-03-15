@@ -605,6 +605,51 @@ p{
     line-height: 1.3;
 }
 
+.testimonial_slider{
+    margin-bottom: 50px;
+}
+
+.testimonial_slider button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.testimonial_slider button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.testimonial_slider .owl-nav i {
+    color: rgb(252, 118, 19);
+    font-size: 25px;
+}
+
+.single_testimoniale_details{
+    text-align: center;
+}
+
+.single_testimoniale_details h4{
+    margin-bottom: 20px;
+}
+
+.single_testimoniale_details h4 a{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    /* color: rgb(241, 99, 125) !important; */
+}
+
+.single_testimoniale_details h4 a:hover{
+    color: rgb(241, 99, 125) !important;
+}
+
+.single_testimoniale_details p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
 .testimonials img{
     width: 80%;
     height: auto;
@@ -762,6 +807,7 @@ p{
     transition: 0.3s all ease-in-out;
     border: 1px solid transparent;
     margin-right: 5px;
+    border-radius: 30px;    
 }
 
 .course_details .details_btn a:hover{
@@ -880,28 +926,28 @@ button.owl-prev {
 
 .single_course_details .course_schedule .schedule p{
     color: #0f0f0f;
-    font-family: 'Poppins', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
 }
 .single_course_details .course_schedule .schedule p span{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .single_course_details .course_schedule .schedule_2 p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .single_course_details .course_schedule .schedule_2 span{
     font-weight: 500;
+    font-size: 15px;
 }
 
 .schedule_btn a{
-    padding: 10px 20px;
+    padding: 8px 12px;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     background: linear-gradient(to right, rgba(241,99,125,1) 0%, rgba(115,99,177,1) 100%);
     background-size: cover;
@@ -927,7 +973,7 @@ button.owl-prev {
 }
 
 .individual_course_tab{
-    /* display: none; */
+    display: none;
 }
 
 .individual_courses .heading_indi h2{
@@ -1151,7 +1197,7 @@ button.owl-prev {
     height: auto;
 }
 
-.play_video .vi{
+.play_video .vi, .play_video iframe{
     left: 50%;
     position: absolute;
     top: 50%;
@@ -1218,6 +1264,117 @@ button.owl-prev {
 
 .requisites ul li ul li{
     list-style-type: lower-alpha;
+}
+
+.module_section{
+    margin-top: 90px;
+}
+
+.module_section h3{
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 600px;
+    color: #0f0f0f;
+}
+
+.owl-carousel.owl-theme{
+    padding: 0 30px;
+}
+
+.module_section .owl-stage-outer{margin-bottom: 30px;}
+
+.module_section .owl-nav.disabled{display: block !important;}
+
+.module_section .owl-nav i{
+    width:100%;
+    font-size: 20px;
+}
+/* .owl-nav i{
+    color: #000;
+    font-size: 35px;
+} */
+
+.module_slider.owl-carousel .owl-nav button.owl-next{
+    background-color: #fff;
+}
+
+.module_slider button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.module_slider button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.course_details .owl-carousel .owl-item img{
+    display: block;
+    width: 100%;
+}
+
+.module_slider .item{
+    display: block;
+    z-index: 1;
+    background-color: #5410bf;
+}
+
+.single_module_details{
+    background-color: #fff;
+    position: relative;
+    height: 260px;
+}
+
+.module_slider .item::after{
+    content: "";
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #5410bf 0%, #5410bf 100%) repeat scroll 0 0;;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.single_module_details .module_img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.single_module_details .module_info{
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.single_module_details .module_info h4{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+.single_module_details .module_info p{
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .faq_bnr{
@@ -1407,6 +1564,14 @@ footer img{
     color: #fff;
 }
 
+footer h6{
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
 footer h2{
     margin-bottom: 13px;
     font-size: 30px;
@@ -1417,6 +1582,10 @@ footer h2{
     font-variant: normal;
     text-transform: capitalize;
     margin-top: 0;
+}
+
+footer ul{
+    padding-left: 40px;
 }
 
 footer ul > li{
@@ -1440,18 +1609,75 @@ footer ul > li  > a{
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    /* transition: 0.1s all ease-in-out; */
 }
 
 footer ul > li  > a:hover{
     color: rgb(241, 99, 125);
 }
 
+.social_icon{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social_icon a{
+    padding-right: 40px;
+    color: #fff;
+    font-size: 25px;
+}
+
 footer p{
     color: #fff;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 700;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+    width: 60%;
+}
+
+footer .subscribe p{
+    margin-bottom: 5px;
+}
+
+footer form{
+    width: 100%;
+    position: relative;
+}
+
+footer form .icon{
+    cursor: default;
+    position: absolute;
+    left: 0;
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+footer form input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4d4d4d;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+footer form button{
+    border: none;
+    background: rgb(241, 99, 125);
+    display: inline;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:1199px){
