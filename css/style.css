@@ -567,6 +567,7 @@ p{
     background-repeat: no-repeat;
     padding: 90px 60px;
     text-align: center;
+    background-size: contain;
 }
 
 .training .single_training h6{
@@ -719,6 +720,7 @@ p{
     background-color: rgba(246, 244, 244, 0.7);
     padding: 20px;
     margin-bottom: 1.17em;
+    margin-top: 0;
 }
 
 .individual_info h3{
@@ -876,7 +878,10 @@ button.owl-prev {
     transform: translateY(-50%);
 }
 
+.slider_item{}
+
 .single_course_details{
+    cursor: pointer;
     padding: 16px;
     background-color: #fff;
     box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.1);
@@ -1707,14 +1712,20 @@ footer form button{
         padding-right: 10px;
         padding-top: 60px;
     }
+    .page_area .course_btn, .course_details_bnr .course_btn {
+        padding: 15px 50px;
     }
+    .individual_courses .heading_indi h2 {
+        font-size: 40px;
+    }
+}
 
-    @media screen and (max-width:991px){
+@media screen and (max-width:991px){
         /***************************************
                 Header Section
         ****************************************/
     body {
-        margin: 72px 0 0 0;
+        margin: 62px 0 0 0;
     }
     .hdrIn {padding: 5px 0}
     .header.fix .hdrIn {
@@ -1745,7 +1756,7 @@ footer form button{
     .phone{
         display: block;
         color: rgb(241, 99, 125);
-        font-size: 35px;
+        font-size: 25px;
     }
     .nav {
         height: 100vh; /* 100% Full-height */
@@ -1806,5 +1817,323 @@ footer form button{
     .home_bnr p {font-size: 20px;}
     .leading_company h3 {font-size: 17px;}
     .home_women .women_heading {font-size: 28px;}
-    .home_women .women_apply h2{}
+    .home_women .women_apply h2{font-size: 20px;}
+    .home_women .women_experience h4 {font-size: 28px;}
+    .home_women .women_experience h2 {font-size: 33px;}
+    .training h2 {font-size: 30px;}
+    .page_area h1, .course_details_bnr h1 {
+        font-size: 35px;
+    }
+    .page_area p, .course_details_bnr p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .page_area .course_btn, .course_details_bnr .course_btn {
+        padding: 10px 30px;
+    }
+    .individual_courses .heading_indi h2 {
+        font-size: 32px;
+    }
+    .individual_courses .heading_indi p {
+        font-size: 14px;
+    }
+    .our_clases h4 {
+        font-size: 18px;
+    }
+    .our_clases ul li {
+        font-size: 14px;
+    }
+    .course_body h2 {
+        font-size: 35px;
+    }
+    .course_details h3 {
+        font-size: 25px;
+    }
+    .course_details .details_btn a {
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    body {
+        margin: 62px 0 0 0;
+    }
+    .home_bnr h2 {
+        font-size: 40px;
+    }
+    .home_bnr .btn_bnr {
+        padding: 15px 67px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .leading_company .company_logo {flex-direction: column;}
+    .leading_company .single_company_logo {
+        width: 22%;
+        margin-bottom: 10px;
+    }
+    .home_women .women_heading {
+        font-size: 20px;
+    }
+    .home_women .women_details .single_women_details {
+        padding-top: 68px;
+        margin-bottom: 20px;
+    }
+    .home_women .women_details img {top: -35%;}
+    .home_women .women_experience h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .home_women .women_experience h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .home_women .women_experience .single_experience_details .single_experience_btn{display: block;}
+    .training .single_training {
+        margin-bottom: 20px;
+        width: 60%;
+        margin: 10px auto;
+    }
+    .testimonials .col-md-6.offset-md-3 .col-md-6{
+        text-align: center;
+    }
+    .testimonials img {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    footer img {
+        width: 30%;
+    }
+    footer ul {
+        text-align: center;
+        padding: 0;
+        margin: 20px 0;
+    }
+    footer ul > li::before {
+        display: none;
+        margin: 20px 0;
+    }
+    .social_icon {
+        justify-content: center;
+    }
+    footer p {text-align: center;}
+    footer .subscribe {width: 100%;}
+    footer form {
+        width: 60%;
+        margin: 20px auto;
+        margin-bottom: 70px;
+    }
+    .page_area .contact_details {
+        margin-top: 40px;
+    }
+    .individual_courses .heading_indi h2 {
+        font-size: 24px;
+    }
+    .individual_courses .heading_indi p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .individual_courses .indi_body {
+        background-image: linear-gradient(180deg, rgb(241, 99, 125) 37%, rgb(255, 255, 255) 37%);
+    }
+    .our_clases h4 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .course_body .tabs a {
+        font-size: 18px;
+        margin-right: 15px;
+    }
+    .course_details .details_btn a {
+        padding: 5px 25px;
+        font-size: 16px;
+    }
+    .course_details .details_btn a span {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    body {
+        margin: 48px 0 0 0;
+    }
+    .togglarBtn {
+        font-size: 25px;
+    }
+    .phone {
+        font-size: 25px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 25%;
+    }
+    .home_bnr {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .home_bnr h4 {
+        font-size: 20px;
+    }
+    .home_bnr h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .home_bnr p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .leading_company {
+        padding: 30px 0;
+    }
+    .leading_company h3 {
+        font-size: 13px;
+    }
+    .leading_company .single_company_logo {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .home_women {
+        padding: 40px 0;
+    }
+    .home_women .women_heading {
+        font-size: 18px;
+    }
+    .home_women .women_details img {
+        top: -25%;
+    }
+    .home_women .women_apply h2 {
+        font-size: 18px;
+    }
+    .home_women .women_experience_pt {
+        padding-top: 20px;
+    }
+    .home_women .women_experience h4 {
+        font-size: 20px;
+    }
+    .home_women .women_experience h2 {
+        font-size: 25px;
+    }
+    .single_experience {
+        margin-top: 20px;
+    }
+    .home_women .women_experience .single_experience_details .single_experience_btn{
+        padding: 15px 30px;
+    }
+    .training {
+        padding: 40px 0;
+    }
+    .training h5 {font-size: 16px;}
+    .training h2 {
+        font-size: 22px;
+    }
+    .training .single_training {width: 80%;}
+    p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .testimonials {
+        padding: 40px 0;
+    }
+    .single_testimoniale_details h4 a {
+        font-size: 16px;
+    }
+    .single_testimoniale_details p {
+        font-size: 14px;
+    }
+    .page_area {
+        padding: 50px 0;
+    }
+    .page_area h1, .course_details_bnr h1 {
+        font-size: 22px;
+    }
+    .page_area p, .course_details_bnr p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .page_area .course_btn, .course_details_bnr .course_btn {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .page_area .contact_details {
+        margin-top: 20px;
+    }
+    form iframe {
+        width: 100%;
+    }
+    .individual_course_heading {
+        padding: 30px 0;
+    }
+    .individual_courses .indi_body {
+        background-image: linear-gradient(180deg, rgb(241, 99, 125) 25%, rgb(255, 255, 255) 25%);
+    }
+    .individual_courses .heading_indi h2 {
+        font-size: 18px;
+    }
+    .individual_courses .heading_indi p {
+        line-height: 16px;
+        font-size: 12px;
+    }
+    .our_clases h4 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    .course_details .details_btn a {
+        display: block;
+        text-align: center;
+    }
+    .course_body .tabs a {
+        display: block;
+        text-align: center;
+    }
+    .course_details h3 {
+        font-size: 20px;
+    }
+    .single_course_details .course_info h4 {
+        font-size: 14px;
+    }
+    .single_course_details .course_info p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .single_course_details .course_schedule {
+        flex-direction: column;
+    }
+    .schedule {
+        width: 100%;
+        text-align: center;
+    }
+    .single_course_details .course_schedule .schedule p {
+        font-size: 13px;
+    }
+    .single_course_details .course_schedule .schedule p span {
+        font-size: 16px;
+    }
+    .schedule_btn {
+        width: 100%;
+    }
+    .schedule_btn a {
+        display: block;
+        text-align: center;
+    }
+    .single_course_details .course_img {
+        height: 149px;
+    }
+    .calendar .date h3 {
+        font-size: 20px;
+    }
+    .calendar .date h3 .angle {
+        width: 25px;
+        height: 25px;
+    }
+    footer p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    footer form {
+        width: 100%;
+    }
 }
