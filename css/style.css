@@ -136,7 +136,7 @@ p{
 .header.fix .hdrIn .logo{
 	width: 20%;
 }
-.header.fix .hdrIn .nav > ul > li > a{font-weight: 600}
+/* .header.fix .hdrIn .nav > ul > li > a{font-weight: 600} */
 
 .hdrIn::after,
 .hdrIn::before{
@@ -367,13 +367,12 @@ p{
 }
 
 .home_women .women_details .single_women_details{
-    /* margin: 0 10px; */
     border: 2px solid rgb(241, 99, 125);
     position: relative;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: center;
 }
 
@@ -1684,97 +1683,128 @@ footer form button{
     /***************************************
             Header Section
     ****************************************/
-        .nav { width: 79%}
-        .nav > ul{
-            margin-left: 5%;
-        }
-        .nav > ul > li > a{
-            margin: 0 10px;
-            letter-spacing: 0px;
-        }
+    body {
+        margin: 100px 0 0 0;
+    }
+    .logo {
+        width: 16%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 16%;
+    }
+    .nav { width: 84%}
+    .nav > ul{
+        margin-left: 1%;
+    }
+    .nav > ul > li > a {
+        margin: 0 5px;
+        letter-spacing: 0px;
+        padding: 8px 2px;
+        font-size: 12px;
+    }
+    .home_women .women_details .single_women_details {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 60px;
+    }
     }
 
     @media screen and (max-width:991px){
         /***************************************
                 Header Section
         ****************************************/
-            body {margin: 62px 0 0 0}
-            .hdrIn {padding: 5px 0}
-            .logo {
-                width: 21%;
-                margin: auto;
-            }
-            .togglarBtn {
-                display: block;
-                background-color: transparent;
-                font-size: 35px;
-                padding: 2px 10px;
-                border: none;
-                border-radius: 6px;
-                outline: none;
-                color: rgb(241, 99, 125);
-                font-weight: 900;
-            }
-            .header.fix .togglarBtn{
-                font-size: 25px;
-                padding: 2px 8px;
-            }
-            .phone{
-                display: block;
-                color: rgb(241, 99, 125);
-                font-size: 35px;
-            }
-            .nav {
-                height: 100vh; /* 100% Full-height */
-                width: 0; /* 0 width - change this with JavaScript */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Stay on top */
-                top: 0; /* Stay at the top */
-                left: 0;
-                background-color: rgb(246, 244, 244); /* Black*/
-                overflow-x: hidden; /* Disable horizontal scroll */
-                padding-top: 70px; /* Place content 60px from the top */
-                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-            }
-            /* .nav ul{} */
-            .nav ul{
-                flex-direction: column;
-                align-items: unset;
-                justify-content: unset;
-            }
-            .nav ul > li{
-                display: block;
-                margin: 0;
-            }
-            .nav ul > li:last-child{display: none}
-            .nav ul > li > a{
-                margin: 0;
-                padding: 0;
-            }
-            /* .nav ul > li > a{
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: center;
-                letter-spacing: 0px;
-                text-transform: uppercase;
-                margin: 0 15px;
-                color: #fff;
-            }
-            .header.fix .hdrIn .nav > ul > li > a {
-                font-weight: 500;
-            }
-            .nav >ul > li a.active{color: #fff}
-            .nav >ul > li a:after{background-color:  #fff} */
-            .nav .closebtn {
-                color: rgb(241, 99, 125);
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-            #main {transition: margin-left .5s;}
-        }
+    body {
+        margin: 72px 0 0 0;
+    }
+    .hdrIn {padding: 5px 0}
+    .header.fix .hdrIn {
+        padding: 5px 0;
+    }
+    .header.fix .hdrIn .logo {
+        width: 20%;
+    }
+    .logo {
+        width: 25%;
+        margin: auto;
+    }
+    .togglarBtn {
+        display: block;
+        background-color: transparent;
+        font-size: 35px;
+        padding: 2px 10px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        color: rgb(241, 99, 125);
+        font-weight: 900;
+    }
+    .header.fix .togglarBtn{
+        font-size: 25px;
+        padding: 2px 8px;
+    }
+    .phone{
+        display: block;
+        color: rgb(241, 99, 125);
+        font-size: 35px;
+    }
+    .nav {
+        height: 100vh; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: rgb(246, 244, 244); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 70px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    /* .nav ul{} */
+    .nav ul{
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+    }
+    .nav ul > li{
+        display: block;
+        margin: 0;
+    }
+    .nav ul > li:last-child{display: none}
+    .nav ul > li > a{
+        margin: 0;
+        padding: 0;
+    }
+    /* .nav ul > li > a{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        margin: 0 15px;
+        color: #fff;
+    }
+    .header.fix .hdrIn .nav > ul > li > a {
+        font-weight: 500;
+    }
+    .nav >ul > li a.active{color: #fff}
+    .nav >ul > li a:after{background-color:  #fff} */
+    .nav .closebtn {
+        color: rgb(241, 99, 125);
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    #main {transition: margin-left .5s;}
+    .home_bnr h4 {font-size: 30px;}
+    .home_bnr h2 {font-size: 58px;}
+    .home_bnr .btn_bnr {padding: 15px 67px;}
+    .home_bnr p {font-size: 20px;}
+    .leading_company h3 {font-size: 17px;}
+    .home_women .women_heading {font-size: 28px;}
+    .home_women .women_apply h2{}
+}
