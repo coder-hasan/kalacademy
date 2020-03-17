@@ -1084,23 +1084,55 @@ button.owl-prev {
 
 .calendar .date h3 .cal{color: #c9c9c9;}
 
-.calendar .date h3 .angle{
+/* .calendar .date h3 .angle{
     display: inline-block;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     text-align: center;
     background-color: #f9f9f9;
-}
+} */
 
-.calendar .date h3 .angle{
-    /* box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.1); */
+/* .calendar .date h3 .angle{
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
     color: #898989;
     transition: 0.3s all ease-in-out;
+} */
+
+/* .calendar .date h3 .angle:hover{
+    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+} */
+
+#datepicker{
+    display: inline-block;
+    cursor: default;
 }
 
-.calendar .date h3 .angle:hover{
+.ui-datepicker-calendar {
+    display: none;
+}
+
+.ui-datepicker-prev,.ui-datepicker-next {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    color: #898989;
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    right: 0;
+}
+.ui-datepicker-prev{
+    left: 26%;
+}
+.ui-datepicker-next{
+    left: 30%;
+}
+.ui-datepicker-prev:hover,.ui-datepicker-next:hover{
     box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.1);
     color: #000;
 }
@@ -1849,6 +1881,12 @@ footer form button{
     .course_details h3 {
         font-size: 25px;
     }
+    .ui-datepicker-prev {
+        left: 42%;
+    }
+    .ui-datepicker-next {
+        left: 50%;
+    }
     .course_details .details_btn a {
         padding: 5px 30px;
         font-size: 20px;
@@ -1900,6 +1938,19 @@ footer form button{
     .testimonials img {
         width: 40%;
         margin-bottom: 40px;
+    }
+    .calendar .date h3 {
+        font-size: 24px;
+    }
+    .ui-datepicker-prev, .ui-datepicker-next {
+        width: 28px;
+        height: 28px;
+    }
+    .ui-datepicker-prev {
+        left: 45%;
+    }
+    .ui-datepicker-next {
+        left: 52%;
     }
     footer img {
         width: 30%;
@@ -2091,6 +2142,17 @@ footer form button{
     }
     .course_details h3 {
         font-size: 20px;
+    }
+    .ui-datepicker-prev, .ui-datepicker-next {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+    .ui-datepicker-prev {
+        left: 70%;
+    }
+    .ui-datepicker-next {
+        left: 82%;
     }
     .single_course_details .course_info h4 {
         font-size: 14px;

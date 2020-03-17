@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="main">
@@ -270,15 +271,15 @@
                 <div class="bootcamp">
                     <div class="container">
                         <div class="details_btn">
-                            <a class="active">All</a>
-                            <a>Ongoing <span class="span_red">3</span></a>
-                            <a>Upcoming <span class="span_prpl">13</span></a>
+                            <a class="active all_tab">All</a>
+                            <a class="ongoing_tab">Ongoing <span class="span_red">3</span></a>
+                            <a class="upcoming_tab">Upcoming <span class="span_prpl">13</span></a>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 all">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider" class="owl-carousel owl-theme bootcamp_slider">
+                            <div id="bootcamp_slider" class="owl-carousel owl-theme bootcamp_slider all">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -344,10 +345,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 ongoing">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider2" class="bootcamp_slider owl-carousel owl-theme">
+                            <div id="bootcamp_slider2" class="bootcamp_slider owl-carousel owl-theme ongoing">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -409,10 +410,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 upcoming">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider3" class="bootcamp_slider owl-carousel owl-theme">
+                            <div id="bootcamp_slider3" class="bootcamp_slider owl-carousel owl-theme upcoming">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -480,15 +481,15 @@
                 <div class="individual_course_tab">
                     <div class="container">
                         <div class="details_btn">
-                            <a class="active">All</a>
-                            <a>Ongoing <span class="span_red">3</span></a>
-                            <a>Upcoming <span class="span_prpl">13</span></a>
+                            <a class="active all_tab">All</a>
+                            <a class="ongoing_tab">Ongoing <span class="span_red">3</span></a>
+                            <a class="upcoming_tab">Upcoming <span class="span_prpl">13</span></a>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 all">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider" class="owl-carousel owl-theme bootcamp_slider">
+                            <div id="bootcamp_slider" class="owl-carousel owl-theme bootcamp_slider all">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -554,10 +555,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 ongoing">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider2" class="bootcamp_slider owl-carousel owl-theme">
+                            <div id="bootcamp_slider2" class="bootcamp_slider owl-carousel owl-theme ongoing">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -619,10 +620,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 upcoming">
                                 <h3>Software Development - Deep Stack Program <sup>TM</sup></h3>
                             </div>
-                            <div id="bootcamp_slider3" class="bootcamp_slider owl-carousel owl-theme">
+                            <div id="bootcamp_slider3" class="bootcamp_slider owl-carousel owl-theme upcoming">
                                 <div class="item">
                                     <div class="single_course_details" onclick="location.href='course-details.html';">
                                         <div class="course_img">
@@ -690,21 +691,20 @@
                 <div class="calendar">
                     <div class="container">
                         <div class="details_btn">
-                            <a class="active">All</a>
-                            <a>Ongoing <span class="span_red">3</span></a>
-                            <a>Upcoming <span class="span_prpl">13</span></a>
+                            <a class="active all_tab">All</a>
+                            <a class="ongoing_tab">Ongoing <span class="span_red">3</span></a>
+                            <a class="upcoming_tab">Upcoming <span class="span_prpl">13</span></a>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="date">
                                     <h3>
                                         <span class="cal"><i class="far fa-calendar"></i></span>
-                                        February, 2020 <span class="angle"><i class="fas fa-angle-left"></i></span>
-                                        <span class="angle"><i class="fas fa-angle-right"></i></span>
+                                        <SPAN id="datepicker"></SPAN>
                                     </h3>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 ongoing_t">
                                 <div class="single_course_details">
                                     <a href="" class="ongoing">ongoing</a>
                                     <div class="course_img">
@@ -728,7 +728,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 ongoing_t">
                                 <div class="single_course_details">
                                     <a href="" class="ongoing">ongoing</a>
                                     <div class="course_img">
@@ -752,7 +752,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 upcoming_t">
                                 <div class="single_course_details">
                                     <a href="" class="ongoing">upcoming</a>
                                     <div class="course_img">
@@ -776,7 +776,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 upcoming_t">
                                 <div class="single_course_details">
                                     <a href="" class="ongoing">Just Started</a>
                                     <div class="course_img">
@@ -800,7 +800,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 all">
                                 <div class="single_course_details">
                                     <div class="course_img">
                                         <img src="img/course5.png">
@@ -823,7 +823,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 all">
                                 <div class="single_course_details">
                                     <div class="course_img">
                                         <img src="img/course6.png">
@@ -898,7 +898,28 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // $( function() {
+        //     $( "#datepicker" ).datepicker({
+        //         dateFormat: "dd-mm-yy"
+        //         ,	duration: "fast"
+        //     });
+        // } );
+        $( "#datepicker" ).datepicker({
+            changeMonth: false,
+            changeYear: false,
+            showButtonPanel: false,
+            dateFormat: 'MM yy',
+            // gotoCurrent: false,
+            nextText: ['<i class="fas fa-angle-right"></i>'],
+            prevText: ['<i class="fas fa-angle-left"></i>'],
+            onClose: function(dateText, inst) { 
+                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            }
+        });
+    </script>
 </body>
 </html>

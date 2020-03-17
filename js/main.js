@@ -61,6 +61,60 @@ $("#calendar_tab").on("click",function(){
   $(".page_area.individual").hide();
 });
 
+$(".bootcamp .all_tab").on("click",function(){
+  $(".bootcamp .all").fadeIn(0010);
+  $(".bootcamp .ongoing").fadeIn(0010);
+  $(".bootcamp .upcoming").fadeIn(0010);
+});
+
+$(".bootcamp .ongoing_tab").on("click",function(){
+  $(".bootcamp .all").hide();
+  $(".bootcamp .ongoing").fadeIn(0010);
+  $(".bootcamp .upcoming").hide();
+});
+
+$(".bootcamp .upcoming_tab").on("click",function(){
+  $(".bootcamp .all").hide();
+  $(".bootcamp .ongoing").hide();
+  $(".bootcamp .upcoming").fadeIn(0010);
+});
+
+$(".individual_course_tab .all_tab").on("click",function(){
+  $(".individual_course_tab .all").fadeIn(0010);
+  $(".individual_course_tab .ongoing").fadeIn(0010);
+  $(".individual_course_tab .upcoming").fadeIn(0010);
+});
+
+$(".individual_course_tab .ongoing_tab").on("click",function(){
+  $(".individual_course_tab .all").hide();
+  $(".individual_course_tab .ongoing").fadeIn(0010);
+  $(".individual_course_tab .upcoming").hide();
+});
+
+$(".individual_course_tab .upcoming_tab").on("click",function(){
+  $(".individual_course_tab .all").hide();
+  $(".individual_course_tab .ongoing").hide();
+  $(".individual_course_tab .upcoming").fadeIn(0010);
+});
+
+$(".calendar .all_tab").on("click",function(){
+  $(".calendar .all").fadeIn(0010);
+  $(".calendar .ongoing_t").fadeIn(0010);
+  $(".calendar .upcoming_t").fadeIn(0010);
+});
+
+$(".calendar .ongoing_tab").on("click",function(){
+  $(".calendar .all").hide();
+  $(".calendar .ongoing_t").fadeIn(0010);
+  $(".calendar .upcoming_t").hide();
+});
+
+$(".calendar .upcoming_tab").on("click",function(){
+  $(".calendar .all").hide();
+  $(".calendar .ongoing_t").hide();
+  $(".calendar .upcoming_t").fadeIn(0010);
+});
+
 
 
 
