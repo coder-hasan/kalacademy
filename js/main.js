@@ -1,3 +1,4 @@
+
 jQuery(window).scroll(function() {
 	if(jQuery(window).scrollTop() > 50) {
 		jQuery('.header').addClass('fix');
@@ -24,6 +25,18 @@ jQuery("a[href^='#']").click(function(e) {
 	jQuery("body, html").animate({
 		scrollTop: position
 	});
+});
+
+$(window).resize(function(){
+  if ($(window).width() >= 992) {
+    document.getElementById("mySidenav").style.width = "84%";
+  }
+});
+
+$(window).resize(function(){
+  if ($(window).width() > 1199) {
+    document.getElementById("mySidenav").style.width = "80%";
+  }
 });
 
 
@@ -59,6 +72,13 @@ $("#calendar_tab").on("click",function(){
   $(".page_area.bootcamp").hide();
   $(".individual_course_tab").hide();
   $(".page_area.individual").hide();
+});
+
+
+$(function(){
+  $('.details_btn a').click(function(){
+      $(this).addClass('details_active').siblings().removeClass('details_active')    
+  })
 });
 
 $(".bootcamp .all_tab").on("click",function(){

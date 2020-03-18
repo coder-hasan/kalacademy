@@ -818,7 +818,7 @@ p{
     color: #000;
 }
 
-.course_details .details_btn a.active{
+.course_details .details_btn a.details_active{
     border: 1px solid #f28498;
     background-color: #f5c6cf;
     border-radius: 30px;
