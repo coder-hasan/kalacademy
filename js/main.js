@@ -34,6 +34,12 @@ $(window).resize(function(){
 });
 
 $(window).resize(function(){
+  if ($(window).width() <= 991) {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+});
+
+$(window).resize(function(){
   if ($(window).width() > 1199) {
     document.getElementById("mySidenav").style.width = "80%";
   }
@@ -134,9 +140,6 @@ $(".calendar .upcoming_tab").on("click",function(){
   $(".calendar .ongoing_t").hide();
   $(".calendar .upcoming_t").fadeIn(0010);
 });
-
-
-
 
 $(document).ready(function(){
 	$(".according h4").click(function(){

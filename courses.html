@@ -902,24 +902,36 @@
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // $( function() {
-        //     $( "#datepicker" ).datepicker({
-        //         dateFormat: "dd-mm-yy"
-        //         ,	duration: "fast"
-        //     });
-        // } );
         $( "#datepicker" ).datepicker({
             changeMonth: false,
             changeYear: false,
             showButtonPanel: false,
             dateFormat: 'MM yy',
             // gotoCurrent: false,
-            nextText: ['<i class="fas fa-angle-right"></i>'],
-            prevText: ['<i class="fas fa-angle-left"></i>'],
+            nextText: ['<i class="fas fa-angle-right" onclick="nextMonth()" id="next"></i>'],
+            prevText: ['<i class="fas fa-angle-left" onclick="prevMonth()" id="prev"></i>'],
             onClose: function(dateText, inst) { 
                 $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
             }
         });
+
+        function nextMonth(){
+            var month = document.getElementById("datepicker").value;
+            if(month = "April 2020"){
+                $(".calendar .all").hide();
+                $(".calendar .ongoing_t").hide();
+                $(".calendar .upcoming_t").fadeIn(0010);
+            }
+        }
+
+        function prevMonth(){
+            var month = document.getElementById("datepicker").value;
+            if(month = "March 2020"){
+                $(".calendar .all").fadeIn(0010);
+                $(".calendar .ongoing_t").fadeIn(0010);
+                $(".calendar .upcoming_t").fadeIn(0010);
+            }
+        }
     </script>
 </body>
 </html>
