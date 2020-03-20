@@ -264,6 +264,15 @@ p{
     margin: 0;
 }
 
+.home_bnr .bnr_btn{
+    padding: 20px 0;
+}
+
+.btn_flex{
+    justify-content: center;
+    align-items: center;
+}
+
 .button{
     display: inline-block;
     margin-bottom: 0;
@@ -280,7 +289,7 @@ p{
 }
 
 .home_bnr .btn_bnr{
-    padding: 15px 90px;
+    padding: 15px 85px;
     font-size: 14px;
     background-color: transparent;
     background-image: linear-gradient(0deg, transparent 0%, transparent 100%);
@@ -308,10 +317,6 @@ p{
     color: #fff;
     line-height: 33px;
     font-weight: 400;
-}
-
-.home_bnr .bnr_btn{
-    padding: 20px 0;
 }
 
 .leading_company{
@@ -1832,6 +1837,9 @@ footer form button{
         padding: 8px 2px;
         font-size: 12px;
     }
+    .home_bnr .btn_bnr {
+        padding: 15px 63px;
+    }
     .home_women .women_details .single_women_details {
         padding-left: 10px;
         padding-right: 10px;
@@ -1939,7 +1947,7 @@ footer form button{
     #main {transition: margin-left .5s;}
     .home_bnr h4 {font-size: 30px;}
     .home_bnr h2 {font-size: 58px;}
-    .home_bnr .btn_bnr {padding: 15px 67px;}
+    .home_bnr .btn_bnr {padding: 15px 33px;}
     .home_bnr p {font-size: 20px;}
     .leading_company h3 {font-size: 17px;}
     .home_women .women_heading {font-size: 28px;}
@@ -2237,6 +2245,12 @@ footer form button{
         display: block;
         text-align: center;
     }
+    .course_body h2 {
+        font-size: 25px;
+    }
+    .course_body .tabs {
+        margin-top: 25px;
+    }
     .course_body .tabs a {
         display: block;
         text-align: center;
@@ -2267,7 +2281,10 @@ footer form button{
     }
     .schedule {
         width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+    .schedule_2 {
+        width: 100%;
     }
     .single_course_details .course_schedule .schedule p {
         font-size: 13px;
