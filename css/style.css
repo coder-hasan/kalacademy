@@ -166,13 +166,13 @@ p{
 	position: relative;
 }
 .nav ul{
-	margin:0;
+	margin-left: 5%;
 	padding:0;
 	list-style:none;
 	position: relative;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
 }
 .nav li{
@@ -183,8 +183,12 @@ p{
 	font-size:13px;
 	color:#fff;
 }
+.nav li:last-child{
+    position: absolute;
+    right: 0;
+}
 .nav li:last-child a{
-    padding: 0 34px;
+    padding: 0 18px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -334,7 +338,7 @@ p{
 }
 
 .leading_company .single_company_logo{
-    width: 13%;
+    width: 11%;
 }
 
 .leading_company .single_company_logo img{
@@ -1717,6 +1721,52 @@ footer form button{
 }
 
 
+
+@media screen and (max-width:1850px){
+    .nav ul {
+        margin-left: 20%;
+    }
+    .nav li:last-child a {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width:1650px){
+    .nav ul {
+        margin-left: 15%;
+    }
+    .nav li:last-child a {
+        padding: 0 45px;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .nav ul {
+        margin-left: 10%;
+    }
+    .nav li:last-child a {
+        padding: 0 36px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .nav ul {
+        margin-left: 7%;
+    }
+    .logo {
+        width: 16%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 16%;
+    }
+    .nav ul {
+        margin-left: 9%;
+    }
+    .nav li:last-child a {
+        padding: 0 30px;
+    
+}
+
 @media screen and (max-width:1199px){
     /***************************************
             Header Section
@@ -1920,7 +1970,7 @@ footer form button{
         font-size: 20px;
     }
     .home_women .women_details .single_women_details {
-        padding-top: 68px;
+        padding-top: 90px;
         margin-bottom: 20px;
     }
     .home_women .women_details img {top: -35%;}
