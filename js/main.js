@@ -199,7 +199,7 @@ $('#testimonial_slider').owlCarousel({
   nav:true,
   dots: false,
   navText: ["<i class='fas fa-caret-left'></i>","<i class='fas fa-caret-right'></i>"],
-  autoplay:false,
+  autoplay:true,
   responsive:{
       0:{
           items:1,

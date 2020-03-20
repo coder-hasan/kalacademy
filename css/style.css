@@ -134,7 +134,7 @@ p{
 .togglarBtn{display: none}
 .header.fix .hdrIn{padding:10px 0}
 .header.fix .hdrIn .logo{
-	width: 20%;
+	width: 14%;
 }
 /* .header.fix .hdrIn .nav > ul > li > a{font-weight: 600} */
 
@@ -146,7 +146,7 @@ p{
 .hdrIn::after{clear:both}
 
 .logo{
-	width:20%;
+	width:14%;
 	float:left;
 	-webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
@@ -166,13 +166,12 @@ p{
 	position: relative;
 }
 .nav ul{
-	margin-left: 5%;
 	padding:0;
 	list-style:none;
 	position: relative;
     width: 100%;
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: center;
 }
 .nav li{
@@ -184,11 +183,10 @@ p{
 	color:#fff;
 }
 .nav li:last-child{
-    position: absolute;
-    right: 0;
+    margin-left: 5%;
 }
 .nav li:last-child a{
-    padding: 0 18px;
+    padding: 0 60px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -1334,7 +1332,7 @@ button.owl-prev {
     font-size: 35px;
 } */
 
-.module_slider.owl-carousel .owl-nav button.owl-next{
+.module_slider.owl-carousel .owl-nav button.owl-next, .module_slider.owl-carousel .owl-nav button.owl-prev{
     background-color: #fff;
 }
 
@@ -1720,11 +1718,27 @@ footer form button{
     border-radius: 50%;
 }
 
+@media screen and (max-width:3000px){
+    body{
+        margin: 154px 0 0 0;
+    }
+}
 
+@media screen and (max-width:2000px){
+    body{
+        margin: 123px 0 0 0;
+    }
+}
 
 @media screen and (max-width:1850px){
-    .nav ul {
-        margin-left: 20%;
+    .logo {
+        width: 15%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 15%;
+    }
+    .nav li:last-child {
+        margin-left: 5%;
     }
     .nav li:last-child a {
         padding: 0 60px;
@@ -1732,8 +1746,14 @@ footer form button{
 }
 
 @media screen and (max-width:1650px){
-    .nav ul {
-        margin-left: 15%;
+    .logo {
+        width: 16%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 16%;
+    }
+    .nav li:last-child {
+        margin-left: 5%;
     }
     .nav li:last-child a {
         padding: 0 45px;
@@ -1741,17 +1761,8 @@ footer form button{
 }
 
 @media screen and (max-width:1500px){
-    .nav ul {
-        margin-left: 10%;
-    }
-    .nav li:last-child a {
-        padding: 0 36px;
-    }
-}
-
-@media screen and (max-width:1400px){
-    .nav ul {
-        margin-left: 7%;
+    .nav li:last-child {
+        margin-left: 4%;
     }
     .logo {
         width: 16%;
@@ -1759,12 +1770,43 @@ footer form button{
     .header.fix .hdrIn .logo {
         width: 16%;
     }
-    .nav ul {
-        margin-left: 9%;
+    .nav li:last-child a {
+        padding: 0 36px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    body {
+        margin: 107px 0 0 0;
+    }
+    .logo {
+        width: 16%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 16%;
+    }
+    .nav li:last-child {
+        margin-left: 2%;
     }
     .nav li:last-child a {
         padding: 0 30px;
-    
+    }   
+}
+
+@media screen and (max-width:1300px){
+    .nav {
+        width: 82%;
+        position: relative;
+    }
+    .logo {
+        width: 15%;
+    }
+    .header.fix .hdrIn .logo {
+        width: 15%;
+    }
+    .nav li a {
+        padding: 10px 10px;
+    }
 }
 
 @media screen and (max-width:1199px){
@@ -1781,9 +1823,9 @@ footer form button{
         width: 16%;
     }
     .nav { width: 84%}
-    .nav > ul{
+    /* .nav > ul{
         margin-left: 1%;
-    }
+    } */
     .nav > ul > li > a {
         margin: 0 5px;
         letter-spacing: 0px;
@@ -1808,7 +1850,7 @@ footer form button{
                 Header Section
         ****************************************/
     body {
-        margin: 62px 0 0 0;
+        margin: 78px 0 0 0;
     }
     .hdrIn {padding: 5px 0}
     .header.fix .hdrIn {
@@ -2066,7 +2108,7 @@ footer form button{
 
 @media screen and (max-width: 575px){
     body {
-        margin: 48px 0 0 0;
+        margin: 56px 0 0 0;
     }
     .togglarBtn {
         font-size: 25px;
@@ -2139,7 +2181,7 @@ footer form button{
     .training h2 {
         font-size: 22px;
     }
-    .training .single_training {width: 80%;}
+    .training .single_training {width: 62%;}
     p {
         line-height: 20px;
         font-size: 12px;
@@ -2268,5 +2310,14 @@ footer form button{
     }
     footer form {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .training .single_training {
+        width: 80%;
+    }
+    .module_section h3 {
+        font-size: 20px;
     }
 }
