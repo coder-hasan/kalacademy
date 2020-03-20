@@ -2213,6 +2213,13 @@ footer form button{
         font-size: 16px;
         line-height: 22px;
     }
+    .page_area ul {
+        padding-left: 25px;
+    }
+    .page_area ul li {
+        font-size: 16px;
+        line-height: 25px;
+    }
     .page_area .course_btn, .course_details_bnr .course_btn {
         display: block;
         text-align: center;
